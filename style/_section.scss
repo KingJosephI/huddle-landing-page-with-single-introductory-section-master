@@ -3,12 +3,7 @@
 @use './functions' as *;
 @use './typography' as *;
 
-header {
-  img{
-    width: rem(200);
-  }
-  padding-bottom: rem(100);
-}
+
 
 section {
   padding: rem(80);
@@ -17,13 +12,19 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $violet;
+  color: #fff;
   display: flex;
   flex-direction: column;
-  color: #fff;
-
+ 
 
 }
 
+header {
+  img{
+    width: rem(200);
+  }
+  padding-bottom: rem(100);
+}
 .content {
   display: flex;
   gap: rem(30);
@@ -72,6 +73,8 @@ a {
   display: flex;
   gap: rem(10);
   justify-content: end;
+  
+  
 
   & > div {
     width: rem(40);
@@ -100,7 +103,7 @@ a {
       text-align: center;
     }
   }
-  
+
   .content {
     display: flex;
     flex-direction: column;
@@ -118,8 +121,6 @@ a {
   h1{
     font-size: rem(24);
     line-height: rem(36);
-    // width: 80%;
-    // text-align: center;
   }
 
   p {
@@ -129,29 +130,8 @@ a {
 
   .social-media{
     display: flex;
-    // gap: rem(10);
     justify-content: center;
     margin-top: rem(80);
-  
-    // & > div {
-    //   width: rem(40);
-    //   height: rem(40);
-    //   border: rem(2) solid #fff;
-    //   border-radius: rem(20);
-    //   display: flex;
-    //   justify-content: center;
-    //   align-items: center;
-  
-    //   &:hover {
-    //     cursor: pointer;
-    //     border-color: #FF52C1;
-  
-    //     i {
-    //       color: #FF52C1;
-    //     }
-    //   }
-    // }
-    
   }
   
 }
