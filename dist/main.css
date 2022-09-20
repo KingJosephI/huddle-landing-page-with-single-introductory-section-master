@@ -21,20 +21,97 @@ section {
   background-color: hsl(257deg, 40%, 49%);
   display: flex;
   flex-direction: column;
+  color: #fff;
 }
 
 .content {
   display: flex;
+  gap: 1.6666666667rem;
+}
+.content .description {
+  margin-top: 2.2222222222rem;
+}
+.content img {
+  max-width: 38.6666666667rem;
 }
 
 h1 {
   font-size: 2.2222222222rem;
   font-family: "Poppins", serif;
   line-height: 3.3333333333rem;
+  font-weight: 500;
 }
 
 p {
   font-size: 1rem;
   font-family: "Open Sans", serif;
   line-height: 1.5rem;
+  padding-top: 1.3333333333rem;
+  padding-bottom: 2.2222222222rem;
+}
+
+a {
+  font-family: "Poppins", serif;
+  background-color: white;
+  text-decoration: none;
+  color: hsl(257deg, 40%, 49%);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding: 0.8333333333rem 2.7777777778rem;
+  border-radius: 1.6666666667rem;
+  transition: 0.2s;
+}
+a:hover {
+  background-color: hsl(300deg, 69%, 71%);
+  color: white;
+}
+
+.social-media {
+  display: flex;
+  gap: 0.5555555556rem;
+  justify-content: end;
+}
+.social-media > div {
+  width: 2.2222222222rem;
+  height: 2.2222222222rem;
+  border: 0.1111111111rem solid #fff;
+  border-radius: 1.1111111111rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media > div:hover {
+  cursor: pointer;
+  border-color: #FF52C1;
+}
+.social-media > div:hover i {
+  color: #FF52C1;
+}
+
+@media screen and (max-width: 50rem) {
+  section > *:not(:first-child) {
+    text-align: center;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .content img {
+    width: 22.2222222222rem;
+  }
+  a {
+    display: inline-block;
+    width: 70%;
+  }
+  h1 {
+    font-size: 1.3333333333rem;
+    line-height: 2rem;
+  }
+  p {
+    font-size: 0.8888888889rem;
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 4.4444444444rem;
+  }
 }/*# sourceMappingURL=main.css.map */
